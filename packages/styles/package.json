@@ -1,0 +1,32 @@
+{
+	"name": "@twosteps/styles",
+	"version": "0.0.0",
+	"private": true,
+	"type": "module",
+	"description": "Shared CSS styles for Turborepo template",
+	"exports": {
+		".": "./index.css",
+		"./core/*": "./core/*.css",
+		"./common/*": "./common/*.css",
+		"./components/*": "./components/*.css",
+		"./tailwind.config": "./tailwind.config.ts",
+		"./postcss.config": "./postcss.config.mjs"
+	},
+	"files": [
+		"*.css",
+		"*.ts",
+		"*.mjs",
+		"core/**/*.css",
+		"common/**/*.css",
+		"components/**/*.css"
+	],
+	"dependencies": {
+		"tailwindcss": "^4.1.17",
+		"postcss": "^8.5.6",
+		"autoprefixer": "^10.4.21"
+	},
+	"devDependencies": {
+		"@twosteps/typescript-config": "workspace:*",
+		"typescript": "^5.9.3"
+	}
+}

@@ -1,0 +1,37 @@
+{
+	"name": "@twosteps/shared",
+	"version": "0.0.0",
+	"private": true,
+	"type": "module",
+	"scripts": {
+		"lint": "eslint .",
+		"check-types": "tsc --noEmit"
+	},
+	"exports": {
+		"./types/*": "./types/*.ts",
+		"./hooks/*": "./hooks/*.ts",
+		"./utils/*": "./utils/*.ts",
+		"./lib/*": "./lib/*",
+		"./store": "./store/index.ts",
+		"./store/*": "./store/*"
+	},
+	"dependencies": {
+		"@reduxjs/toolkit": "^2.8.2",
+		"axios": "^1.13.2",
+		"clsx": "^2.1.1",
+		"react-redux": "^9.2.0",
+		"tailwind-merge": "^3.4.0"
+	},
+	"peerDependencies": {
+		"react": "^19.0.0",
+		"react-dom": "^19.0.0"
+	},
+	"devDependencies": {
+		"@twosteps/eslint-config": "workspace:*",
+		"@twosteps/typescript-config": "workspace:*",
+		"@types/react": "^19.2.7",
+		"@types/react-dom": "^19.2.3",
+		"eslint": "^9.39.1",
+		"typescript": "^5.9.3"
+	}
+}

@@ -1,0 +1,192 @@
+[
+  {
+    "step": 1,
+    "type": "question",
+    "title": "What's your energy vibe lately?",
+    "width": "350px",
+    "options": [
+      { "id": 1, "label": "Supercharged" },
+      { "id": 2, "label": "Pretty good, but I crash in the afternoon" },
+      { "id": 3, "label": "Burned out or dragging" },
+      { "id": 4, "label": "In full-on energy crisis mode" }
+    ]
+  },
+  {
+    "step": 2,
+    "type": "multi-select",
+    "title": "In what areas do you need the most support?",
+    "width": "390px",
+    "options": [
+      { "id": 1, "label": "Brain fog" },
+      { "id": 2, "label": "Digestive issues" },
+      { "id": 3, "label": "Pain / inflammation" },
+      { "id": 4, "label": "Sleep problems" },
+      { "id": 5, "label": "Mood swings / anxiety" },
+      { "id": 6, "label": "Fatigue" },
+      { "id": 7, "label": "Low libido" },
+      { "id": 8, "label": "Skin issues" },
+      { "id": 9, "label": "Hormonal chaos" },
+      { "id": 10, "label": "Frequent illness" },
+      { "id": 11, "label": "Can't lose weight" }
+    ]
+  },
+
+  {
+    "step": 3,
+    "type": "info",
+    "title": "Did you know?",
+    "width": "605px",
+    "description": "Parasites don't just drain your energy—they release toxins, weaken immunity, and some are even proven cancer-causing. A periodical, tailored detox helps clear these hidden threats and restore your body's defenses.",
+    "quotes": "“Studies indicate that up to 30% of the population experiences significant parasitic burden, while nearly 1 in 2 individuals lack sufficient immune capacity to fully eliminate the parasites we are continuously exposed to.”",
+    "linkTitle": "Link to study: ",
+    "link": "https://journals.plos.org/plosone/article?id=10.1371%2Fjournal.pone.0003680&utm_source=chatgpt.com",
+    "image": "/assets/img/quiz/cover-img2.png",
+    "cta": "Continue"
+  },
+  {
+    "step": 4,
+    "type": "multi-select",
+    "title": "Brain, mood & sleep check",
+    "subtitle": "Do you often feel… (check all that apply)",
+    "width": "350px",
+    "options": [
+      { "id": 1, "label": "Mentally foggy or forgetful" },
+      { "id": 2, "label": "Wired but tired" },
+      { "id": 3, "label": "Anxious, overwhelmed, or burnt out" },
+      { "id": 4, "label": "Trouble sleeping or racing thoughts" },
+      { "id": 5, "label": "Headaches or migraines" }
+    ],
+    "note": "If 2+ = Nervous system support may be needed before detox"
+  },
+  {
+    "step": 5,
+    "type": "info",
+    "title": "Did you know?",
+    "width": "350px",
+    "description": "Up to 70% of chronic tension is linked to emotional stress stored in the body. This 'somatic stress' often hides beneath the surface, yet it shapes how we feel, heal, and perform—making emotional health a vital (but often missing) part of any true wellness plan.",
+    "linkTitle": "Link to study: ",
+    "link": "https:/pubmed.ncbi.nlm.nih.gov/39716139/",
+    "image": "/assets/img/quiz/cover-img.png",
+    "cta": "Continue"
+  },
+  {
+    "step": 6,
+    "type": "guidelines",
+    "title": "But guess what — you're never alone",
+    "width": "350px",
+    "description": "At OYA Health, we gather all your physical and emotional data, simplify and visualize it, and transform it into your personalized healing blueprint. The result: a clear path that guides your body back into balance.",
+    "guidelines": [
+      {
+        "icon": "/assets/img/quiz/arrow2.png",
+        "title": "Reset",
+        "description": "Clear inflammatory load and microbial stress. Reduce pill takiness, improve gut-brain-immune signaling, and reset metabolic function."
+      },
+      {
+"icon": "/assets/img/quiz/heatmap.png",
+        "title": "Replenish",
+        "description": "Deliver precise micronutrients, adaptogens, and cofactors to resolve mitochondrial output, stabilize immunity, and rebuild from the cellular level up."
+      },
+      {
+"icon": "/assets/img/quiz/route2.png",
+        "title": "Regulate",
+        "description": "Rewire stress response pathways through somatic practices, HRV-based breathwork, and 1800+ curated protocols that retrain your nervous system and structural reflexes."
+      },
+      {
+"icon": "/assets/img/quiz/fire2.png",
+        "title": "Rise",
+        "description": "Integrate upgrade protocols recommended by neuroscientists, body and movement-based neuroplasticity to expand energy, clarity, and adaptability. Shift habits for a longer biological age and 'health span'— not just lifespan."
+      }
+    ],
+    "image": "/assets/img/quiz/oya-framework.png",
+    "cta": "Continue"
+  },
+  {
+    "step": 7,
+    "type": "question",
+    "title": "Do you take supplements?",
+    "width": "350px",
+    "options": [
+      { "id": 1, "label": "Yes" },
+      { "id": 2, "label": "No" },
+      { "id": 3, "label": "Not sure" }
+    ]
+  },
+  {
+    "step": 8,
+    "type": "question",
+    "title": "Do you go to therapy?",
+    "width": "350px",
+    "options": [
+      { "id": 1, "label": "Yes" },
+      { "id": 2, "label": "No" },
+      { "id": 3, "label": "Sometimes" },
+      { "id": 4, "label": "Have in the past" }
+    ]
+  },
+  {
+    "step": 9,
+    "type": "stats",
+    "title": "The Hidden Truths Behind Your Health",
+    "width": "350px",
+    "unitPosition": "top",
+    "stats": [
+      {
+        "value": "70",
+        "unit": "%",
+        "description": "Of chronic tension has emotional roots, yet emotional health is rarely part of the wellness plan.",
+        "icon": "/assets/img/quiz/mind.png"
+      },
+      {
+        "value": "9",
+        "unit": "/10",
+        "description": "Adults in US lives outside of metabolic homeostasis. Which dysregulates gut-brain axis.",
+        "icon": "/assets/img/quiz/circles.png"
+      },
+      {
+        "value": "1",
+        "unit": "/3",
+        "description": "Adults carry undetected toxin buildup, stress overload, or microbial imbalances that hijack hormones and impact mental energy, mood and healing.",
+        "icon": "/assets/img/quiz/virus.png"
+      }
+    ],
+    "cta": "Continue"
+  },
+  {
+    "step": 10,
+    "type": "stats",
+    "title": "Who Said Healing Takes Forever?",
+   
+    "width": "350px",
+    "stats": [
+      {
+        "value": "10",
+        "unit": "DAYS",
+        "description": "Improve digestion and align gut-brain axis.",
+        "icon": "/assets/img/quiz/stomach.png"
+      },
+      {
+        "value": "30",
+        "unit": "DAYS",
+        "description": "Clear toxins and macrophage that slow your body down.",
+        "icon": "/assets/img/quiz/virus.png"
+      },
+      {
+        "value": "3",
+        "unit": "MONTHS",
+        "description": "Build emotional resilience and release deep somatic imprints.",
+        "icon": "/assets/img/quiz/music-equalizer.png"
+      }
+    ],
+    "cta": "Continue"
+  },
+  {
+    "step": 11,
+    "type": "email-submit",
+    "title": "Watch your inbox",
+    "description": "Watch your inbox for gift code & personalized tip",
+    "width": "350px",
+   
+    "image": "/assets/img/quiz/email-banner.png",
+    "submitButtonText": "Submit"
+  }
+]

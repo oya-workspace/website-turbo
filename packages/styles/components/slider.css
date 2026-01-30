@@ -1,0 +1,244 @@
+/* Slider Container */
+.slider-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.slider-container-disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+/* Value Bubble Container */
+.slider-value-bubble-container {
+  position: relative;
+  height: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+.slider-value-bubble-wrapper {
+  position: absolute;
+  transform: translateX(-50%);
+  transition: all 200ms ease-out;
+}
+
+.slider-value-bubble {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.slider-value-display {
+  background-color: var(--color-primary);
+  color: var(--color-primary-foreground);
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  box-shadow: var(--shadow-lg);
+  font-weight: var(--font-weight-semibold);
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  min-width: 60px;
+  text-align: center;
+}
+
+.slider-value-label {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: var(--font-weight-medium);
+  color: var(--text-primary);
+  text-align: center;
+  max-width: 120px;
+  text-wrap: balance;
+}
+
+/* Track Container */
+.slider-track-container {
+  position: relative;
+}
+
+/* Slider Track */
+.slider-track {
+  position: relative;
+  height: 12px;
+  background-color: var(--color-gray-200);
+  border-radius: 9999px;
+  cursor: pointer;
+}
+
+.slider-track-disabled {
+  background-color: var(--color-gray-100);
+  cursor: not-allowed;
+}
+
+/* Progress Fill */
+.slider-progress {
+  position: absolute;
+  height: 100%;
+  background-color: var(--color-primary);
+  border-radius: 9999px;
+  transition: width 150ms ease;
+}
+
+.slider-progress-disabled {
+  background-color: var(--color-gray-300);
+}
+
+/* Tick Marks Container */
+.slider-marks-container {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+  pointer-events: none;
+}
+
+/* Individual Tick Mark */
+.slider-mark {
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  background-color: var(--border);
+  border-radius: 9999px;
+  transform: translateX(-50%);
+}
+
+/* Slider Thumb */
+.slider-thumb {
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 28px;
+  height: 28px;
+  background-color: var(--color-white);
+  border: 3px solid var(--color-primary);
+  border-radius: 9999px;
+  box-shadow: var(--shadow-md);
+  cursor: grab;
+  transition: transform 150ms ease;
+}
+
+.slider-thumb-disabled {
+  background-color: var(--color-gray-100);
+  border-color: var(--color-gray-300);
+  box-shadow: none;
+  cursor: not-allowed;
+}
+
+.slider-thumb:hover {
+  transform: translate(-50%, -50%) scale(1.1);
+}
+
+.slider-thumb:active {
+  cursor: grabbing;
+  transform: translate(-50%, -50%) scale(1.1);
+}
+
+.slider-thumb:focus {
+  outline: none;
+  box-shadow: 0 0 0 4px rgba(8, 55, 99, 0.2);
+}
+
+.slider-thumb.dragging {
+  transform: translate(-50%, -50%) scale(1.1);
+}
+
+.slider-thumb.focused {
+  box-shadow: 0 0 0 4px rgba(8, 55, 99, 0.2);
+}
+
+/* Legends */
+.slider-legends {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 1rem;
+  gap: 1rem;
+}
+
+.slider-legend-left,
+.slider-legend-right {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: var(--font-weight-medium);
+  color: var(--text-secondary);
+  flex: 1;
+}
+
+.slider-legend-left {
+  text-align: left;
+}
+
+.slider-legend-right {
+  text-align: right;
+}
+
+/* Numeric Labels */
+.slider-numeric-labels-container {
+  position: relative;
+  margin-top: 0.5rem;
+  height: 1.5rem;
+}
+
+.slider-numeric-labels {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  color: var(--text-secondary);
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+.slider-numeric-label {
+  position: absolute;
+  transform: translateX(-50%);
+}
+
+/* Help Text */
+.slider-help-text {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  color: var(--text-secondary);
+  text-align: center;
+}
+
+/* Error Message */
+.slider-error {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  color: var(--color-danger);
+  font-weight: var(--font-weight-medium);
+}
+
+/* Accessibility */
+@media (prefers-reduced-motion: reduce) {
+  .slider-value-bubble-wrapper,
+  .slider-progress,
+  .slider-thumb {
+    transition: none;
+  }
+}
+
+/* Dark mode adjustments */
+/* @media (prefers-color-scheme: dark) {
+  .slider-mark {
+    background-color: var(--color-gray-600);
+  }
+  
+  .slider-track {
+    background-color: var(--color-gray-700);
+  }
+  
+  .slider-thumb {
+    background-color: var(--color-white);
+    box-shadow: var(--shadow-lg);
+  }
+} */
+

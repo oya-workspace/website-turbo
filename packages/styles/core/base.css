@@ -1,0 +1,57 @@
+@tailwind base;
+
+@layer base {
+	/* Base element styles */
+	*,
+	*::before,
+	*::after {
+		@apply box-border;
+	}
+
+	html {
+		line-height: 1.15;
+		-webkit-text-size-adjust: 100%;
+	}
+
+	body {
+		@apply m-0;
+		font-family: var(--font-family-inter);
+		font-weight: var(--font-weight-normal);
+		line-height: var(--line-height-normal);
+		color: var(--color-gray-900);
+		background-color: var(--color-gray-50);
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+	}
+
+	/* Responsive Typography */
+	@media (max-width: 768px) {
+		:root {
+			--text-hero-title: 2.25rem; /* 36px */
+			--text-hero-subtitle: 1.125rem; /* 18px */
+			--text-navbar-logo: 1.25rem; /* 20px */
+		}
+	}
+
+	@media (max-width: 640px) {
+		:root {
+			--text-hero-title: 1.875rem; /* 30px */
+			--text-hero-subtitle: 1rem; /* 16px */
+		}
+	}
+	
+	/* scrollbar styles */
+	::-webkit-scrollbar {
+		width: 8px;
+	}
+	::-webkit-scrollbar-track {
+		background: var(--color-gray-100);
+	}
+	::-webkit-scrollbar-thumb {
+		background: var(--color-gray-400);
+	}
+	::-webkit-scrollbar-thumb:hover {
+		background: var(--color-gray-500);
+	}
+
+}

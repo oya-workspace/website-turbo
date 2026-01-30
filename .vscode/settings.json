@@ -1,0 +1,40 @@
+{
+  "git.closeDiffOnOperation": true,
+  "javascript.preferences.importModuleSpecifier": "shortest", // default value is shortest
+  "js/ts.implicitProjectConfig.checkJs": true,
+  "eslint.workingDirectories": ["./client"],
+  "eslint.experimental.useFlatConfig": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit"
+  },
+  "editor.formatOnSave": true,
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  },
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  },
+  "window.zoomLevel": 0,
+  "editor.tabSize": 2,
+  "editor.insertSpaces": false,
+  "editor.mouseWheelZoom": false,
+  "editor.multiCursorModifier": "alt",
+  "css.lint.unknownProperties": "ignore",
+  "css.lint.unknownAtRules": "ignore",
+  "files.exclude": {
+    "**/.git": false
+  },
+  "explorer.compactFolders": false,
+  "python.defaultInterpreterPath": "${workspaceFolder}/server/.venv/bin/python3",
+  "python.terminal.activateEnvironment": false
+}

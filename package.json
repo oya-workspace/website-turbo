@@ -1,0 +1,39 @@
+{
+  "name": "@repo/root",
+  "private": true,
+  "scripts": {
+    "build": "turbo run build",
+    "build:storybook": "turbo --filter=@twosteps/storybook build",
+    "build:cms": "turbo --filter=@oya/cms build",
+    "build:static-site": "turbo --filter=@oya/static-site build",
+    "build:client-portal-next": "turbo --filter=@oya/client-portal-next build",
+    "dev": "turbo run dev",
+    "dev:storybook": "turbo --filter=@twosteps/storybook dev",
+    "dev:static-site": "turbo --filter=@oya/static-site dev",
+    "dev:client-portal-next": "turbo --filter=@oya/client-portal-next dev",
+    "lint": "turbo run lint",
+    "lint:client-portal-next": "turbo --filter=@oya/client-portal-next lint",
+    "lint:static-site": "turbo --filter=@oya/static-site lint",
+    "lint:storybook": "turbo --filter=@twosteps/storybook lint",
+    "format": "prettier --write \"**/*.{ts,tsx,js,jsx,json,md}\"",
+    "format:client-portal-next": "prettier --write \"apps/client-portal-next/**/*.{ts,tsx,md}\"",
+    "format:static-site": "prettier --write \"apps/static-site/**/*.{ts,tsx,md}\"",
+    "format:storybook": "prettier --write \"apps/storybook/**/*.{ts,tsx,md}\"",
+    "check-types": "turbo run check-types",
+    "check-types:client-portal-next": "turbo --filter=@oya/client-portal-next check-types",
+    "check-types:static-site": "turbo --filter=@oya/static-site check-types",
+    "check-types:storybook": "turbo --filter=@twosteps/storybook check-types",
+    "dev:cms": "turbo --filter=@oya/cms dev",
+    "clean": "turbo run clean && rm -rf node_modules"
+  },
+  "devDependencies": {
+    "prettier": "^3.6.2",
+    "turbo": "^2.6.1",
+    "typescript": "^5.9.2"
+  },
+  "pnpm": {},
+  "packageManager": "pnpm@9.0.0",
+  "engines": {
+    "node": ">=18"
+  }
+}

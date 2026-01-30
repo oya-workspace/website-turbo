@@ -1,0 +1,1230 @@
+/* Approach Hero */
+.approach-hero-container {
+    position: relative;
+}
+
+.approach-hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 200px;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0.1) 60%, transparent 100%);
+    z-index: 1;
+    pointer-events: none;
+}
+
+.approach-hero {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 12rem 0 6rem;
+    color: #fff;
+    aspect-ratio: 10 / 3.6;
+    width: 100%;
+    transition: opacity 0.6s ease-in-out;
+}
+
+video.approach-hero {
+    padding: 0;
+    object-fit: cover;
+    display: block;
+    border-radius: 0;
+}
+
+.founder-quote h2 {
+    font-weight: 400;
+    font-family: 'Newsreader', var(--font-family-base)!important;
+}
+
+.founder-quote-name {
+    font-size: 16px;
+    font-weight: 300;
+    color: #2B2B2B;
+    font-family: 'Geist', 'Helvetica Neue', Arial, sans-serif !important;
+    margin-top: 1rem;
+    line-height: 130%;
+}
+
+.founder-quote-title {
+    font-size: 12px;
+    font-weight: 300;
+    color: #2B2B2B;
+    font-family: 'Geist', 'Helvetica Neue', Arial, sans-serif !important;
+}
+
+
+/* Healthcare Failing Section */
+.healthcare-failing-section {
+    background: #fff;
+    padding: 4rem 0 0;
+    border: 1px solid #d19b61;
+}
+
+.approach-pill {
+    display: block;
+    background: #78A4AA;
+    color: #ffffff;
+    padding: 0.6rem 2rem;
+    border-radius: 30px;
+    font-size: 18px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin: 0 auto 2rem auto;
+    text-align: center;
+    width: fit-content;
+    font-family: 'Geist';
+}
+
+.healthcare-title,
+.our-how-title,
+.take-control-title {
+    font-size: 48px;
+    color: #2B2B2B;
+    font-weight: 300;
+    margin-bottom: 2rem;
+    line-height: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.common-title {
+    font-size: 48px;
+    color: #2B2B2B;
+    font-weight: 300;
+    margin-bottom: 2rem;
+    line-height: 100%;
+    margin: 0 auto;
+}
+
+.our-how-title {
+    max-width: 1120px;
+}
+
+.take-control-title {
+    max-width: 900px;
+}
+
+.healthcare-intro {
+    font-size: 16px;
+    color: #2B2B2B;
+    font-weight: 400;
+    line-height: 130%;
+    max-width: 680px;
+    margin: 1rem auto;
+}
+
+.evidence-description {
+    font-size: 16px;
+    color: #2B2B2B;
+    font-weight: 300;
+    line-height: 130%;
+    opacity: 0.7;
+}
+
+.healthcare-cta-description {
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 130%;
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+.evidence-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    margin-bottom: 4rem;
+    align-items: start;
+}
+
+.evidence-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.evidence-item {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 1.2rem 1.5rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: 1px solid #e5e5e5;
+}
+
+.evidence-item:hover {
+    border-color: #d19b61;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.evidence-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.evidence-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background: #f0f0f0;
+    color: #2B2B2B;
+    flex-shrink: 0;
+    transition: all 0.3s ease;
+}
+
+.evidence-item.expanded .evidence-toggle {
+    background: #d19b61;
+    color: #ffffff;
+}
+
+.evidence-title {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #2B2B2B;
+    flex: 1;
+}
+
+.evidence-image {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    min-height: 500px;
+}
+
+.image-placeholder {
+    width: 100%;
+    height: 100%;
+    min-height: 500px;
+    background: #e5e5e5;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #999;
+    font-size: 1.1rem;
+    border: 2px dashed #ccc;
+}
+
+.performance-description {
+    font-size: 16px;
+    font-weight: 300;
+    color: #2B2B2B;
+    /* width: 700px; */
+
+}
+
+.healthcare-cta-banner {
+    position: relative;
+    background: linear-gradient(135deg, #1e3a5f 0%, #2d5a7f 100%);
+    background-image: url('/assets/img/approach/water-pattern.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 4rem 0;
+    margin-top: 4rem;
+    overflow: hidden;
+}
+
+.healthcare-cta-banner::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(30, 58, 95, 0.75);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+}
+
+.healthcare-cta-banner .container {
+    position: relative;
+    z-index: 2;
+}
+
+.healthcare-cta-banner p {
+    color: #ffffff;
+    font-size: 1.2rem;
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+    max-width: 1000px;
+}
+
+.healthcare-cta-banner p:last-child {
+    margin-bottom: 0;
+}
+
+/* Healthcare Section Styles */
+
+
+
+.healthcare-heading-section {
+    font-family: var(--font-family-base);
+}
+
+.healthcare-heading-section h2 {
+    font-family: var(--font-family-base) !important;
+    font-weight: 200;
+}
+
+.healthcare-accordion-item {
+    border-bottom: 2px dashed rgba(0, 0, 0, 0.2) !important;
+    border-top: none !important;
+    border-left: none !important;
+    border-right: none !important;
+}
+
+.healthcare-accordion-item .flex-1 p {
+    color: black;
+    font-weight: 300;
+}
+
+.healthcare-cta-wrapper {
+    position: relative;
+    background: url('/assets/img/approach/bg-water.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* padding-block: 2rem; */
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.healthcare-cta-card {
+    background: #51423459;
+    backdrop-filter: blur(19px);
+    border-radius: 20px;
+    padding: 1rem 3rem;
+    margin: 1.5rem 1.5rem;
+    position: relative;
+    text-align: center;
+    color: #ffffff;
+}
+
+/* Our How Section */
+.our-how-section {
+    position: relative;
+    background: url('/assets/img/approach/greenish-marble.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-block: 2rem;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.our-how-card {
+    background: #51423459;
+    backdrop-filter: blur(37px);
+    border-radius: 20px;
+    padding: 56px 80px;
+    position: relative;
+    text-align: center;
+}
+
+.principles-grid {
+    display: flex;
+    gap: 10px;
+    margin-top: 3rem;
+    justify-content: center;
+    align-items: stretch;
+}
+
+.principle-card {
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 24px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    flex: 0 0 380px;
+    border: 1px solid #E9A15E;
+}
+
+.principle-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.principle-icon {
+    position: relative;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-bottom: 3rem;
+    height: 80px;
+}
+
+.principle-icon img {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.principle-card-title {
+    font-size: 24px;
+    font-weight: 400;
+    color: #2B2B2B;
+    margin-bottom: 1rem;
+    line-height: 110%;
+    text-align: left;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+.principle-card-description {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.6;
+    margin: 0;
+    text-align: left;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    flex: 1;
+}
+
+.solutions-menus {
+    margin: 2rem auto 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* gap: 5px; */
+    flex-wrap: wrap;
+}
+
+.member-portal-menus-button {
+    font-size: 16px;
+    font-weight: 400;
+    color: #2B2B2B;
+    opacity: 0.3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+    padding: 1.5rem 1rem;
+    text-align: center;
+    line-height: 1.4;
+    word-wrap: break-word;
+    white-space: normal;
+}
+
+.member-portal-menus-button img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+    display: block;
+    flex-shrink: 0;
+}
+
+.member-portal-menus-button.active {
+    opacity: 1;
+}
+
+.member-portal-menus-button.active img {
+    opacity: 1;
+}
+
+.solutions-menu-button {
+    position: relative;
+    border: 1px solid #f4c89e;
+    background: #ffffff;
+    color: #2B2B2B;
+    opacity: 0.3;
+    font-size: 20px;
+    font-weight: 300;
+    padding: 0.8rem 2rem;
+    border-radius: 999px;
+    max-width: 250px;
+    text-align: center;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    z-index: 1;
+}
+
+
+.solutions-menu-button.active {
+    color: #1f1f1f;
+    background: linear-gradient(120deg,
+            #cbe3ff 0%,
+            #ffffff 50%,
+            #f6c8a4 100%);
+    box-shadow: 0 10px 25px rgba(245, 200, 158, 0.35);
+    border-color: transparent;
+    opacity: 1;
+}
+
+
+.solutions-menu-button:hover:not(.active) {
+    color: #2b2b2b;
+    background: #fffdf8;
+}
+
+@media (max-width: 768px) {
+    .solutions-menus {
+        gap: 16px;
+    }
+
+    .solutions-menu-button {
+        min-width: 45%;
+    }
+
+    .solutions-menu-button:not(:last-child)::after {
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .solutions-menu-button {
+        min-width: 100%;
+    }
+}
+
+.take-control-section {
+    background-color: #3D7A7A;
+    background-image: none;
+    padding: 12rem 0 6rem;
+    color: #fff;
+    border-radius: 20px;
+
+}
+
+/* Physical and Emotional Section */
+.physical-emotional-section {
+    padding: 4rem 0;
+    background: transparent;
+}
+
+.bg-card-img {
+    position: relative;
+    background: url(/assets/img/approach/retro-gradient.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    /* padding-block: 2rem; */
+    border-radius: 20px;
+    overflow: hidden;
+    max-width: 100%;
+    width: 700px;
+    padding: 1.5rem;
+    margin: 0 auto;
+}
+
+.bg-card-img .under-cover-bg {
+    background: #51423426;
+    backdrop-filter: blur(50px);
+    border-radius: 20px;
+    padding: 1rem 3rem;
+    position: relative;
+    text-align: center;
+    color: #ffffff;
+}
+
+.bg-card-img .under-cover-bg .ff-newsreader {
+    font-family: 'Newsreader', var(--font-family-base);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: xx-large;
+    font-weight: 300;
+}
+
+.bg-card-img .under-cover-bg .ff-newsreader span {
+    align-content: center;
+    border: 2px solid black;
+    width: 40px;
+    height: 40px;
+    border-radius: 90%;
+    font-family: 'Geist';
+}
+
+.bg-card-img .under-cover-bg p {
+    font-family: 'Newsreader', var(--font-family-base);
+    color: black;
+    font-size: larger;
+    line-height: 23px;
+    margin-top: 1rem;
+}
+
+.physical-emotional-section .line-clamp-3 {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.physical-emotional-section .tab-bk {
+    position: relative;
+}
+
+.physical-emotional-section .menuss {
+    display: flex;
+    justify-content: flex-start;
+    gap: 3rem;
+    align-items: center;
+    margin-bottom: 4rem;
+}
+
+.physical-emotional-section .menuss h4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    color: #ddd8d1;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 500;
+    margin: 0;
+}
+
+.physical-emotional-section .menuss h4 img {
+    width: 32px;
+    height: 32px;
+}
+
+.physical-emotional-section .menuss h4.active {
+    color: #2B2B2B;
+}
+
+.physical-emotional-section .row {
+    align-items: stretch;
+}
+
+.physical-emotional-section .col-12.col-lg-6 {
+    display: flex;
+    flex-direction: column;
+}
+
+.physical-emotional-section .tab-bk {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.performance-graphic {
+    width: 100%;
+    overflow: hidden;
+    height: 480px;
+}
+
+.performance-graphic img {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.nervous-system-section .col-12.col-lg-6 {
+    display: flex;
+    flex-direction: column;
+}
+
+.nervous-system-section h3 {
+    max-width: 100%;
+    width: 550px;
+}
+
+.nervous-system-section p {
+    max-width: 100%;
+    width: 550px;
+    color: black;
+    font-size: medium;
+}
+
+.nervous-system-row {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.nervous-system-col {
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+    margin-bottom: 1rem;
+}
+
+@media (min-width: 992px) {
+    .nervous-system-row>.nervous-system-col:first-child {
+        padding-right: 1.5rem;
+    }
+
+    .nervous-system-row>.nervous-system-col:last-child {
+        padding-left: 1.5rem;
+    }
+}
+
+.performance-cta-wrapper {
+    width: 85%;
+    margin: 4rem auto;
+    position: relative;
+    background: url('/assets/img/approach/bg-nervous.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.performance-cta-card {
+    background: rgba(81, 66, 52, 0.35);
+    backdrop-filter: blur(27px);
+    border-radius: 10px;
+    padding: 3rem;
+    padding-block: 1rem;
+    margin: 1rem;
+    position: relative;
+    text-align: center;
+    color: #ffffff;
+}
+
+.performance-cta-wrapper .performance-cta-card p {
+    max-width: 100%;
+    width: 720px;
+    margin: auto;
+}
+
+#how-we-do-sections {
+    position: relative;
+    background: url(/assets/img/approach/mix.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    padding-block: 2rem;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+#how-we-do-sections .max-w-7xl {
+    background: #51423459;
+    backdrop-filter: blur(37px);
+    border-radius: 32px;
+    padding-inline: 4rem;
+}
+
+#how-we-do-sections .max-w-7xl h1 {
+    text-align: center;
+    font-size: xxx-large;
+    /* color: #ffff; */
+}
+
+#how-we-do-sections .max-w-7xl p {
+    max-width: 100%;
+    width: 700px;
+    margin: 0 auto;
+    text-align: left;
+    /* color: #ffff; */
+    font-size: 17px;
+    /* margin-block: 2rem; */
+    margin-bottom: 3rem;
+    margin-top: 1rem;
+}
+
+
+.body-data-section p {
+    font-weight: 300;
+    max-width: 100%;
+    width: 700px;
+    margin: 0 auto;
+    padding-block: 1.5rem;
+}
+
+.body-data-section .get-started-btn {
+    padding: 7px 15px 7px 15px;
+    border-radius: 27px;
+    font-size: 14px;
+    font-weight: 300;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    background: #2B2B2B;
+}
+
+.body-data-section .get-started-btn .fa {
+    width: 25px;
+    height: 25px;
+    background: #ffff;
+    color: black;
+    border-radius: 19px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 400;
+}
+
+.body-data-section img {
+    width: 806px;
+    margin: 0 auto;
+}
+
+/* Responsive */
+@media (max-width: 991px) {
+    .approach-hero {
+        text-align: center;
+        padding: 8rem 0 4rem;
+        min-height: auto;
+        aspect-ratio: auto;
+    }
+
+    .our-how-card {
+        padding: 2rem 1.5rem;
+        margin: 1.5rem;
+    }
+
+    .principles-grid {
+        gap: 1.5rem;
+    }
+
+
+}
+
+@media (max-width: 680px) {
+    .principle-card {
+        width: 100%;
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 600px) {
+    .evidence-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .evidence-image {
+        min-height: 400px;
+    }
+
+    .image-placeholder {
+        min-height: 400px;
+    }
+
+    .physical-emotional-section .grid {
+        grid-template-columns: 1fr;
+    }
+
+    .nervous-system-section .row {
+        flex-direction: column;
+    }
+
+    .nervous-system-section .col-12.col-lg-6 {
+        margin-bottom: 2rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .approach-hero {
+        padding: 6rem 0 3rem;
+    }
+
+    .our-how-section {
+        padding: 4rem 0;
+    }
+
+    .our-how-overlay {
+        padding: 2rem 1.5rem;
+    }
+
+    .healthcare-cta-banner {
+        padding: 3rem 0;
+    }
+
+    .healthcare-cta-banner p {
+        font-size: 1rem;
+    }
+
+    /*Mobile css start kamran*/
+    /* .main-header .navbar-toggler .navbar-toggler-icon {
+        filter: none !important;
+    } */
+    .approach-hero {
+        padding: unset !important;
+        aspect-ratio: 11 / 19 !important;
+        object-fit: cover !important;
+    }
+
+    .founder-quote {
+        padding-top: unset !important;
+    }
+
+    .founder-quote img {
+        height: 80px !important;
+    }
+
+    .founder-quote .container {
+        padding-left: unset !important;
+        padding-right: unset !important;
+    }
+
+    .founder-quote .container.mx-auto.px-6 {
+        padding-left: 1rem !important;
+        padding-right: 1rem !important;
+    }
+
+    .founder-quote h2 {
+        font-size: 29px;
+    }
+
+    .founder-quote .founder-quote-name {
+        font-weight: 300;
+        font-style: Light;
+        font-size: 16px;
+        leading-trim: CAP_HEIGHT;
+        line-height: 130%;
+        letter-spacing: -1%;
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    .founder-quote-title {
+        font-family: Geist;
+        font-weight: 300;
+        font-style: Light;
+        font-size: 12px;
+        leading-trim: NONE;
+        line-height: 130%;
+        letter-spacing: -2%;
+        text-align: center;
+    }
+
+    .healthcare-failing-section {
+        border-radius: 24px !important;
+        border-width: 1px !important;
+        padding-top: 40px !important;
+        padding-right: 20px !important;
+        padding-bottom: 40px !important;
+        padding-left: 20px !important;
+    }
+
+    .healthcare-failing-section .approach-pill {
+        font-family: Geist;
+        font-weight: 400;
+        font-style: Regular;
+        font-size: 15px;
+        line-height: 120%;
+        letter-spacing: -1%;
+        text-transform: uppercase;
+        border-radius: 999px;
+        gap: 4px;
+        padding-top: 12px;
+        padding-right: 16px;
+        padding-bottom: 12px;
+        padding-left: 16px;
+    }
+
+    .healthcare-heading-section h2 {
+        font-family: Geist;
+        font-weight: 300;
+        font-style: Light;
+        font-size: 28px;
+        leading-trim: NONE;
+        line-height: 100%;
+        letter-spacing: -3%;
+        text-align: center;
+    }
+
+    .healthcare-intro {
+        font-size: 15px;
+    }
+
+    .healthcare-accordion-item .ff-newsreader {
+        font-size: large;
+    }
+
+    .healthcare-cta-wrapper {
+        border-radius: 12px;
+        padding: 10px;
+    }
+
+    .healthcare-cta-wrapper .healthcare-cta-card {
+        padding: 12px;
+        margin: unset;
+    }
+
+    .healthcare-cta-description {
+        font-family: Geist;
+        font-weight: 200;
+        font-size: 16px;
+        line-height: 130%;
+        letter-spacing: -3%;
+        text-align: center;
+        max-width: 100%;
+        width: 227px;
+    }
+
+    .our-how-section {
+        padding: 20px !important;
+        border-radius: 25px !important;
+    }
+
+    .our-how-section .container {
+        padding-left: unset !important;
+        padding-right: unset !important;
+    }
+
+    .our-how-section .container .our-how-card {
+        border-radius: 32px;
+        padding-top: 40px;
+        padding-right: 20px;
+        padding-bottom: 40px;
+        padding-left: 20px;
+        margin: unset !important;
+    }
+
+    .our-how-section .container .our-how-card .our-how-title {
+        font-family: Geist;
+        font-weight: 300;
+        font-style: Light;
+        font-size: 28px;
+        line-height: 100%;
+        text-align: center;
+    }
+
+    .our-how-section .container .our-how-card .principles-grid {
+        flex-direction: column;
+    }
+
+    .our-how-section .container .our-how-card .principles-grid .principle-card {
+        height: 100%;
+        width: 100%;
+        border-radius: 12px;
+    }
+
+    .our-how-section .container .our-how-card .principles-grid .principle-card .principle-icon {
+        margin-bottom: 1.2rem;
+        height: 40px;
+    }
+
+    .our-how-section .container .our-how-card .principles-grid .principle-card .principle-icon img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .our-how-section .container .our-how-card .principles-grid .principle-card .principle-card-title {
+        margin-bottom: 0.2rem;
+        font-size: 23px;
+    }
+
+    h2.our-how-title.text-center {
+        font-family: Geist;
+        font-weight: 300;
+        font-style: Light;
+        font-size: 26px;
+        leading-trim: NONE;
+        line-height: 100%;
+    }
+
+    .solutions-menus.member-portal-menus {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .solutions-menus.member-portal-menus button {
+        opacity: 1;
+        border-radius: 884.67px;
+        gap: 8.86px;
+        border-width: 0.89px;
+        padding-top: 17.71px;
+        padding-right: 14.17px;
+        padding-bottom: 17.71px;
+        padding-left: 14.17px;
+        background: #FFFFFF;
+        border: 0.89px solid #E9A15E;
+        font-family: Geist;
+        font-weight: 400;
+        font-style: Regular;
+        font-size: 14px;
+        line-height: 110.00000000000001%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .solutions-menus.member-portal-menus button img {
+        width: 32px;
+        height: 32px;
+    }
+
+    .physical-emotional-section {
+        padding-top: 1rem;
+    }
+
+    .px-8.py-12 span.inline-flex {
+        text-align: left !important;
+    }
+
+    .physical-emotional-section .bg-card-img {
+        padding: 20px;
+    }
+
+    .under-cover-bg {
+        border-radius: 12px;
+        padding-top: 16px;
+        padding-right: 24px;
+        padding-bottom: 16px;
+        padding-left: 24px;
+    }
+
+    .under-cover-bg p {
+        font-family: Newsreader;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 110.00000000000001%;
+        text-align: center;
+    }
+
+    .physical-emotional-section .menuss {
+        align-items: flex-start;
+        margin-bottom: 4rem;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .physical-emotional-section .menuss h4 {
+        font-family: Geist;
+        font-weight: 300;
+        font-style: Light;
+        font-size: 18px;
+        line-height: 120%;
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    .physical-emotional-section .mb-4 h4 {
+        font-family: Geist;
+        font-weight: 300;
+        font-style: Light;
+        font-size: 20px;
+        leading-trim: NONE;
+        line-height: 120%;
+        letter-spacing: -3%;
+
+    }
+
+    .performance-section span {
+        text-align: left;
+    }
+
+    .performance-section span img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .performance-section .px-8 {
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+    }
+
+    .performance-section h2 {
+        font-weight: 300;
+        font-style: Light;
+        font-size: 30px;
+        leading-trim: NONE;
+        line-height: 100%;
+        letter-spacing: -3%;
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+
+    .performance-section .bg-card-img {
+        padding: 20px !important;
+        border-radius: 16px !important;
+    }
+
+    .performance-section .bg-card-img .under-cover-bg .ff-newsreader span {
+        display: flex;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .performance-section .under-cover-bg {
+        padding-top: 16px;
+        padding-right: 24px;
+        padding-bottom: 16px;
+        padding-left: 24px;
+    }
+
+    .performance-section .under-cover-bg p {
+        font-family: Newsreader;
+        font-weight: 400;
+        font-style: Regular;
+        font-size: 18px;
+        leading-trim: NONE;
+        line-height: 110.00000000000001%;
+        letter-spacing: -2%;
+        text-align: center;
+    }
+
+    #how-we-do-sections {
+        padding-left: 20px;
+        padding-right: 20px;
+        background-size: cover;
+    }
+
+    #how-we-do-sections .max-w-7xl {
+        border-radius: 32px;
+        gap: 40px;
+        padding-top: 40px;
+        padding-right: 20px;
+        padding-bottom: 40px;
+        padding-left: 20px;
+    }
+
+    #how-we-do-sections .max-w-7xl p {
+        max-width: 100%;
+        width: 700px;
+        margin: 0 auto;
+        text-align: left;
+        /* color: #ffff; */
+        font-size: 17px;
+        /* margin-block: 2rem; */
+        margin-bottom: unset;
+    }
+
+    #how-we-do-sections .max-w-7xl .principles-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+        display: grid;
+    }
+
+    section.testimonals-section.aos-init.aos-animate {
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+        background-size: cover !important;
+    }
+
+    section.testimonals-section.aos-init.aos-animate .cards-testimonals small {
+        font-weight: 400;
+        font-style: Regular;
+        font-size: 18px;
+        leading-trim: CAP_HEIGHT;
+        line-height: 120%;
+        letter-spacing: -1%;
+        text-transform: uppercase;
+    }
+
+    section.testimonals-section.aos-init.aos-animate .cards-testimonals h2 {
+        font-weight: 300;
+        font-style: Light;
+        font-size: 30px;
+        line-height: 100%;
+        letter-spacing: -3%;
+        max-width: 100%;
+        width: 197px;
+    }
+
+    .faq-section .flex.flex-column {
+        flex-direction: column;
+    }
+
+    .faq-section .faq-sec {
+        padding-right: 10px !important;
+        padding-left: 10px;
+    }
+
+    /*Mobile css ends kamran*/
+}

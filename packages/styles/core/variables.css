@@ -1,0 +1,117 @@
+@tailwind base;
+
+@layer base {
+  /* Design System CSS Variables */
+  :root {
+    /* Primary Colors */
+    --color-primary: #083763; /* #083763 */
+    --color-primary-foreground: #FFFFFF; /* #FFFFFF */
+    --color-primary-hover: #0a4578; /* #0a4578 */
+    --color-primary-light: #1a5a8a; /* #1a5a8a */
+    --color-primary-dark: #062d52; /* #062d52 */
+
+    /* Secondary Colors */
+    --color-secondary: #CFE1F3; /* #CFE1F3 */
+    --color-secondary-hover: #b8d4ed; /* #b8d4ed */
+    --color-secondary-light: #e3f0f9; /* #e3f0f9 */
+    --color-secondary-dark: #a8c7e0; /* #a8c7e0 */
+
+    /* Base Colors */
+    --color-white: #FFFFFF; /* #FFFFFF */
+    --color-dark: #262626; /* #262626 */
+
+    /* Common Website Colors */
+    --color-success: #10b981;
+    --color-success-light: #d1fae5;
+    --color-success-dark: #047857;
+
+    --color-warning: #f59e0b;
+    --color-warning-light: #fef3c7;
+    --color-warning-dark: #d97706;
+
+
+    --color-danger: #ef4444;
+    --color-danger-light: #fee2e2;
+    --color-danger-dark: #dc2626;
+
+    --color-info: #3b82f6;
+    --color-info-light: #dbeafe;
+    --color-info-dark: #2563eb;
+
+    /* Gray Scale - OKLCH Format (Tailwind Compatible) */
+    --color-gray-50: #f9fafb;
+    --color-gray-100: #f3f4f6;
+    --color-gray-200: #e5e7eb;
+    --color-gray-300: #d1d5db;
+    --color-gray-400: #9ca3af;
+    --color-gray-500: #6b7280;
+    --color-gray-600: #4b5563;
+    --color-gray-700: #374151;
+    --color-gray-800: #1f2937;
+    --color-gray-900: #111827;
+    --color-gray-950: #030712;
+
+    /* Semantic Colors */
+    --background: var(--color-gray-50);
+    --surface: var(--color-white);
+    --border: var(--color-gray-200);
+    --border-light: var(--color-gray-100);
+
+    --text-primary: var(--color-dark);
+    --text-secondary: var(--color-gray-500);
+    --text-muted: var(--color-gray-400);
+    --text-light: var(--color-white);
+
+    /* Sidebar Colors - White Mode */
+    --sidebar-bg: var(--color-white);
+    --sidebar-hover: var(--color-gray-50);
+
+    /* Shadows */
+    --shadow-navbar: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+    --shadow-button-hover: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+
+    /* Spacing Variables */
+    --spacing-xs: 0.25rem; /* 4px */
+    --spacing-sm: 0.5rem; /* 8px */
+    --spacing-md: 1rem; /* 16px */
+    --spacing-lg: 1.5rem; /* 24px */
+    --spacing-xl: 2rem; /* 32px */
+    --spacing-2xl: 3rem; /* 48px */
+
+    /* Typography Variables */
+    --font-family-inter: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+
+    /* Font Sizes */
+    --text-navbar-logo: 1.5rem; /* 24px */
+    --text-navbar-subtitle: 0.75rem; /* 12px */
+    --text-nav-link: 0.9375rem; /* 15px */
+    --text-button: 0.9375rem; /* 15px */
+    --text-hero-title: 3rem; /* 48px */
+    --text-hero-subtitle: 1.25rem; /* 20px */
+
+    /* Font Weights */
+    --font-weight-normal: 400;
+    --font-weight-medium: 500;
+    --font-weight-semibold: 600;
+    --font-weight-bold: 700;
+
+    /* Line Heights */
+    --line-height-tight: 1.2;
+    --line-height-normal: 1.5;
+
+    /* Letter Spacing */
+    --letter-spacing-tight: -0.025em;
+    --letter-spacing-wide: 0.1em;
+
+    /* Border Radius */
+    --radius-button: 0.5rem; /* 8px */
+    --radius-sm: 0.25rem; /* 4px */
+    --radius-md: 0.375rem; /* 6px */
+    --radius-lg: 0.5rem; /* 8px */
+    --radius-xl: 0.75rem; /* 12px */
+  }
+}

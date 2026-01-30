@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+/* CORE */
+@import "./core/variables.css";
+@import "./core/base.css";
+
+/* COMMON */
+@import "./common/buttons.css";
+
+/* COMPONENTS */
+@import "./components/slider.css";

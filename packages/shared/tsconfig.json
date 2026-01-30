@@ -1,0 +1,10 @@
+{
+	"$schema": "https://json.schemastore.org/tsconfig",
+	"extends": "@twosteps/typescript-config/base.json",
+	"compilerOptions": {
+		"baseUrl": ".",
+		"jsx": "react-jsx"
+	},
+	"include": ["types", "hooks", "utils", "lib", "store"],
+	"exclude": ["node_modules"]
+}

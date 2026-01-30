@@ -1,0 +1,466 @@
+/* Article Page Styles - OYA Design */
+
+.article-page {
+  background-color: var(--bd-light-bg, #F7F2EB);
+  min-height: 100vh;
+}
+
+/* Hero Section */
+.article-hero {
+  position: relative;
+  height: 60vh;
+  min-height: 400px;
+  max-height: 600px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: flex-end;
+}
+
+.article-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.8) 0%,
+    rgba(0, 0, 0, 0.4) 50%,
+    rgba(0, 0, 0, 0.2) 100%
+  );
+  display: flex;
+  align-items: flex-end;
+  padding-bottom: 60px;
+}
+
+.article-hero .container {
+  position: relative;
+  z-index: 1;
+}
+
+.article-back-link {
+  display: inline-block;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 14px;
+  text-decoration: none;
+  margin-bottom: 20px;
+  transition: color 0.2s;
+}
+
+.article-back-link:hover {
+  color: #fff;
+}
+
+.article-category-pill {
+  display: inline-block;
+  background-color: var(--bd-light, #E8C9AE);
+  color: #2B2B2B;
+  padding: 6px 16px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 16px;
+}
+
+.article-hero .article-title {
+  color: #fff;
+  font-family: 'Newsreader', serif;
+  font-size: clamp(28px, 5vw, 48px);
+  font-weight: 400;
+  line-height: 1.2;
+  margin-bottom: 20px;
+  max-width: 900px;
+}
+
+.article-hero .article-meta {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 14px;
+}
+
+.article-hero .article-meta img {
+  border-radius: 50%;
+}
+
+.meta-separator {
+  opacity: 0.5;
+}
+
+/* Article Content Section */
+.article-content-section {
+  padding: 60px 0 100px;
+}
+
+.article-body {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+/* Intro Question */
+.article-intro-question {
+  font-family: 'Newsreader', serif;
+  font-size: 22px;
+  font-style: italic;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 30px;
+  padding-left: 20px;
+  border-left: 3px solid var(--bd-light, #E8C9AE);
+}
+
+/* Lead Paragraph */
+.article-lead {
+  font-size: 18px;
+  line-height: 1.8;
+  color: #444;
+  margin-bottom: 40px;
+}
+
+/* Article Content */
+.article-content {
+  font-family: 'Geist', sans-serif;
+  font-size: 17px;
+  line-height: 1.9;
+  color: #333;
+}
+
+.article-paragraph {
+  margin-bottom: 24px;
+}
+
+.article-heading {
+  font-family: 'Newsreader', serif;
+  color: #2B2B2B;
+  margin-top: 48px;
+  margin-bottom: 24px;
+  font-weight: 500;
+}
+
+h2.article-heading {
+  font-size: 28px;
+}
+
+h3.article-heading {
+  font-size: 22px;
+}
+
+.article-list {
+  margin-bottom: 24px;
+  padding-left: 24px;
+}
+
+.article-list li {
+  margin-bottom: 12px;
+  line-height: 1.7;
+}
+
+.article-quote {
+  font-family: 'Newsreader', serif;
+  font-size: 20px;
+  font-style: italic;
+  color: #555;
+  margin: 40px 0;
+  padding: 24px 30px;
+  background-color: rgba(232, 201, 174, 0.15);
+  border-left: 4px solid var(--bd-light, #E8C9AE);
+  border-radius: 0 8px 8px 0;
+}
+
+/* Tags */
+.article-tags {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+  margin-top: 60px;
+  padding-top: 30px;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.tags-label {
+  font-weight: 600;
+  color: #555;
+  font-size: 14px;
+}
+
+.tag-pill {
+  display: inline-block;
+  background-color: rgba(232, 201, 174, 0.3);
+  color: #555;
+  padding: 4px 12px;
+  border-radius: 16px;
+  font-size: 13px;
+}
+
+/* Footer CTA */
+.article-footer {
+  max-width: 720px;
+  margin: 60px auto 0;
+  text-align: center;
+}
+
+.btn-back-to-blog {
+  display: inline-block;
+  background-color: #2B2B2B;
+  color: #fff;
+  padding: 14px 32px;
+  border-radius: 30px;
+  font-size: 15px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: background-color 0.2s, transform 0.2s;
+}
+
+.btn-back-to-blog:hover {
+  background-color: #444;
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+/* Featured Article Link */
+.featured-article-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.featured-article-link:hover .featured-article-card {
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+}
+
+/* Read More Button in Card */
+/* .btn-read-more {
+  display: inline-block;
+  color: #2B2B2B;
+  font-weight: 500;
+  padding: 3px 20px;
+  border-radius: 20px;
+  background-color: #E7E7E7;
+  text-decoration: none;
+  position: relative;
+} */
+
+.btn-read-more::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: currentColor;
+  transform: scaleX(0);
+  transition: transform 0.2s;
+}
+
+.btn-read-more:hover::after {
+  transform: scaleX(1);
+}
+
+/* ========================================
+   Custom Markdown Directive Styles
+   ======================================== */
+
+/* Divider */
+.md-divider {
+  border: none;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(0, 0, 0, 0.1), transparent);
+  margin: 48px 0;
+}
+
+/* Images */
+.md-figure {
+  margin: 40px 0;
+}
+
+.md-image {
+  width: 100%;
+  height: auto;
+  border-radius: 16px;
+}
+
+/* Quote Block (:::quote) */
+.md-quote-block {
+  border-radius: 16px;
+  font-family: 'Geist', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-weight: 100;
+}
+
+.md-quote-content {
+  text-align: center;
+  max-width: 680px;
+  margin: 0 auto;
+}
+
+.md-quote-block .article-paragraph,
+.md-quote-content p {
+  font-family: 'Geist', sans-serif;
+  font-weight: 100;
+  line-height: 1.6;
+  color: #2B2B2B;
+  margin-bottom: 0;
+}
+
+.md-quote-block .quote-line {
+  font-family: 'Geist', sans-serif;
+  font-style: normal;
+  font-weight: 200;
+  line-height: 1.1;
+  margin: 0;
+  padding: 0;
+}
+
+.md-quote-author {
+  font-family: 'Geist', -apple-system, sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  color: #666;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-top: 24px;
+  margin-bottom: 0;
+}
+
+/* Center Block (:::center) */
+.md-center-block {
+  text-align: center;
+  font-family: "Geist", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.md-center-block .article-paragraph,
+.md-center-block p,
+.md-center-block .center-line {
+  font-family: 'Geist', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-style: normal;
+  font-weight: 200;
+  color: #2B2B2B;
+  line-height: 1.4;
+  margin: 0;
+  padding: 4px 0;
+}
+
+/* Statement Block (:::statement) */
+.md-statement-block {
+  text-align: center;
+  margin: 32px 0 40px;
+}
+
+.md-statement-block .article-paragraph {
+  font-family: 'Newsreader', Georgia, serif;
+  font-size: 20px;
+  font-weight: 500;
+  color: #2B2B2B;
+  line-height: 1.5;
+  margin-bottom: 0;
+}
+
+/* Highlight Block (:::highlight) */
+.md-highlight-block {
+  font-family: 'Newsreader';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 110%;
+  text-align: center;
+}
+
+.md-highlight-block .article-paragraph {
+  font-family: 'Newsreader', Georgia, serif;
+  font-size: 20px;
+  font-weight: 500;
+  color: #3A3A3A;
+  margin-bottom: 0;
+  line-height: 1.5;
+}
+
+/* ========================================
+   Responsive Styles
+   ======================================== */
+
+@media (max-width: 768px) {
+  .article-hero {
+    height: 50vh;
+    min-height: 350px;
+  }
+
+  .article-hero-overlay {
+    padding-bottom: 40px;
+  }
+
+  .article-content-section {
+    padding: 40px 0 60px;
+  }
+
+  .article-intro-question {
+    font-size: 18px;
+  }
+
+  .article-lead {
+    font-size: 16px;
+  }
+
+  .article-content {
+    font-size: 16px;
+  }
+
+  .article-quote {
+    font-size: 17px;
+    padding: 20px;
+  }
+
+  h2.article-heading {
+    font-size: 24px;
+  }
+
+  h3.article-heading {
+    font-size: 20px;
+  }
+
+  /* Markdown directive responsive styles */
+  .md-quote-block .article-paragraph,
+  .md-quote-content p,
+  .md-quote-block .quote-line {
+    font-size: 22px;
+  }
+
+  .md-center-block {
+    font-size: 18px;
+  }
+
+  .md-center-block .article-paragraph,
+  .md-center-block p,
+  .md-center-block .center-line {
+    font-size: 18px;
+  }
+
+  .md-statement-block .article-paragraph {
+    font-size: 18px;
+  }
+
+  .md-highlight-block {
+    padding: 20px 20px;
+  }
+
+  .md-highlight-block .article-paragraph {
+    font-size: 18px;
+  }
+
+  .md-figure {
+    margin: 32px -16px;
+  }
+
+  .md-image {
+    border-radius: 0;
+  }
+}
+
+@media (min-width: 769px) {
+  .md-image {
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.06);
+  }
+}
