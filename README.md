@@ -1,11 +1,11 @@
-# Benchmark Client Turbo
+# OYA Client Turbo
 
-A production-ready Turborepo monorepo for the Benchmark Client application, featuring a Next.js web app, shared UI components, Storybook documentation, and centralized configuration packages.
+A production-ready Turborepo monorepo for the OYA Client application, featuring a Next.js web app, shared UI components, Storybook documentation, and centralized configuration packages.
 
 ## Monorepo Structure
 
 ```
-benchmark-client-turbo/
+OYA-client-turbo/
 ├── apps/
 │   ├── web/              # Next.js 15 web application (main app)
 │   └── storybook/        # Storybook 10 component documentation
@@ -21,7 +21,7 @@ benchmark-client-turbo/
 
 ### Apps
 
-#### `@benchmark/web` (apps/web)
+#### `@OYA/web` (apps/web)
 
 Main Next.js 15 application featuring:
 
@@ -58,7 +58,7 @@ Shared component library built on:
 
 Exports 50+ reusable components including forms, data display, navigation, and feedback components.
 
-#### `@benchmark/shared` (packages/shared)
+#### `@OYA/shared` (packages/shared)
 
 Common code shared across apps:
 
@@ -115,7 +115,7 @@ Run specific app:
 
 ```bash
 # Run web app only
-pnpm dev --filter=@benchmark/web
+pnpm dev --filter=@OYA/web
 
 # Run Storybook only
 pnpm dev --filter=@twosteps/storybook
@@ -152,18 +152,18 @@ import { Button, Card, Input } from '@twosteps/ui';
 import { DataTable } from '@twosteps/ui/data-table';
 
 // Shared types
-import type { Patient } from '@benchmark/shared/types/patient.type';
-import type { ApiResponse } from '@benchmark/shared/types/api.type';
+import type { Patient } from '@OYA/shared/types/patient.type';
+import type { ApiResponse } from '@OYA/shared/types/api.type';
 
 // Shared hooks
-import { useCan } from '@benchmark/shared/hooks/useCan';
-import { usePagination } from '@benchmark/shared/hooks/usePagination';
+import { useCan } from '@OYA/shared/hooks/useCan';
+import { usePagination } from '@OYA/shared/hooks/usePagination';
 
 // Shared utils
-import { getSubjectFromMenuPath } from '@benchmark/shared/utils/get-subject-from-menu-path';
+import { getSubjectFromMenuPath } from '@OYA/shared/utils/get-subject-from-menu-path';
 
 // Shared configs
-import { MENU_CONFIG } from '@benchmark/shared/configs/menu.config';
+import { MENU_CONFIG } from '@OYA/shared/configs/menu.config';
 
 // App-specific imports using @/ alias
 import { apiClient } from '@/lib/api-client';
@@ -177,7 +177,7 @@ import { PatientCard } from '@/components/patient/PatientCard';
 import { Button } from '@twosteps/ui';
 
 // Shared packages
-import type { Patient } from '@benchmark/shared/types/patient.type';
+import type { Patient } from '@OYA/shared/types/patient.type';
 
 // Web app imports (for stories that need context)
 import { AuthProvider } from '@/context/AuthContext';
@@ -207,7 +207,7 @@ NEXT_PUBLIC_AUTH_PROVIDER=local
 All packages use consistent path aliases:
 
 - `@twosteps/ui` → UI component library
-- `@benchmark/shared` → Shared code (types, hooks, utils, configs)
+- `@OYA/shared` → Shared code (types, hooks, utils, configs)
 - `@/*` → App-specific code (only in apps/web and apps/storybook)
 
 ### TypeScript
@@ -245,7 +245,7 @@ Multi-layered approach:
 Separation of concerns:
 
 - **UI Layer** (`@twosteps/ui`): Pure presentation components
-- **Shared Layer** (`@benchmark/shared`): Domain logic, types, hooks
+- **Shared Layer** (`@OYA/shared`): Domain logic, types, hooks
 - **App Layer** (`apps/web`): App-specific logic, pages, API integration
 
 ### Authorization
@@ -284,7 +284,7 @@ Run tasks for specific packages:
 
 ```bash
 # Run only web app build
-turbo build --filter=@benchmark/web
+turbo build --filter=@OYA/web
 
 # Run all tasks that depend on ui package
 turbo build --filter=...@twosteps/ui
@@ -388,7 +388,7 @@ If Storybook fails to start:
 
 2. **Import using namespace:**
    ```typescript
-   import type { MyType } from '@benchmark/shared/types/my-type';
+   import type { MyType } from '@OYA/shared/types/my-type';
    ```
 
 ### Creating New Stories
